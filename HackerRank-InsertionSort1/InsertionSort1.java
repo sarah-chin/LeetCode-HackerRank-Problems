@@ -1,15 +1,13 @@
 import java.io.*;
 import java.math.*;
-import java.security.*;
 import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 
-public class Solution {
+
+public class InsertionSort1 {
 
     // Complete the insertionSort1 function below.
-    static void insertionSort1(int n, int[] arr) {
+    static void insertionSort(int n, int[] arr) {
         // rightmost cell is the unsorted number
         int to_sort = arr[n-1];
         int j = 0;
@@ -47,7 +45,7 @@ public class Solution {
             arr[i] = arrItem;
         }
 
-        insertionSort1(n, arr);
+        insertionSort(n, arr);
 
         scanner.close();
     }
