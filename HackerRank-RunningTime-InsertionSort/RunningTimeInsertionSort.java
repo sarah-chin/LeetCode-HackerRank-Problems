@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class RunningTimeInsertionSort {
+    
     static int runningTime(int[] arr) {
         int shifts = 0;
         for (int i = 1; i < arr.length; i++) {
@@ -25,7 +26,10 @@ public class RunningTimeInsertionSort {
         
         int[] arr = new int[n];
         int result = runningTime(arr);
-        System.out.println(result);
+
+        for (int r : result) {
+            System.out.print(r + " ");
+        }
 
         s.close();
     }
